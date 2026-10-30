@@ -1,0 +1,35 @@
+name: trick_or_treat_busters
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # ▼ ここにアイコン自動生成ツールを追加しました
+  flutter_launcher_icons: "^0.13.1"
+
+# ▼ WEB用のアイコン生成設定を追加しました
+flutter_launcher_icons:
+  image_path: "assets/icon.png"
+  web:
+    generate: true
+    image_path: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  # アセット（画像など）を読み込む設定のコメントアウトを外しています
+  assets:
+    - assets/icon.png
